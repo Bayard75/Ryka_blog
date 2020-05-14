@@ -1,2 +1,2 @@
-web gunicorn run:app
-init: FLASK_APP=flaskblog.py
+web: gunicorn app:app
+init: export FLASK_APP=app.py
